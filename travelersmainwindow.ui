@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TravelersMainWindow</class>
+ <widget class="QMainWindow" name="TravelersMainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1597</width>
+    <height>852</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>-3</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TravelersMainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralWidget{
+
+
+
+
+background-image: url(:/resources/img/travel-background.jpg);
+
+min-height: 100;
+
+background-repeat: no-repeat;
+
+/*
+background-image: url(:/resources/img/main_window_backgroudn.jpg);
+background-size: 1800px 1800px
+
+ width: 200px;
+  height: 1800px;
+*/
+background-size: cover;
+
+ }
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>120</y>
+      <width>801</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton
+{
+	       padding-top: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 5px;
+border-radius: 6px;
+	background:rgba(0,0,0,0.5);
+color: white;
+font-style: bold;
+font-size: 15px;
+}
+
+.QPushButton:hover {
+
+
+font-size: 20px;
+font-style: bold;
+color: white;
+
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="showCitiesPage">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>581</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>276</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_2
+{
+ font-size: 60px;
+font-weight: bold;
+color: white;
+
+
+
+
+
+
+
+
+
+}
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>          European Cities </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_cities"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="showItemsPage">
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>533</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">#label{
+
+color: white;
+font-weight: bold;
+font-size: 30px;
+
+}</string>
+               </property>
+               <property name="text">
+                <string>Distance From Berlin: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="distanceLabel">
+               <property name="styleSheet">
+                <string notr="true">#distanceLabel{
+color: white;
+font-weight: bold;
+font-size: 30px;
+
+}
+</string>
+               </property>
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="styleSheet">
+                <string notr="true">#label_3{
+
+color: white;
+font-weight: bold;
+font-size: 30px;
+
+}</string>
+               </property>
+               <property name="text">
+                <string>Traditional Food Items from: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="cityLabel">
+               <property name="styleSheet">
+                <string notr="true">#cityLabel{
+
+color: white;
+font-weight: bold;
+font-size: 30px;
+
+}</string>
+               </property>
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_items"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pb_NextCity">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>370</y>
+        <width>111</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pb_NextCity
+{
+	 padding-top: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 5px;
+              border: 2px solid #8f8f91;
+        border-radius: 6px;
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #A3A4A2, stop: 1 #dadbde);
+color: white;
+font-size: 15px;
+
+/*image: url(:/resources/img/backButton.png);*/
+}
+
+#pb_NextCity:hover {
+
+
+
+  border: 2px solid #60FE27;
+
+
+font-size: 20px;
+font-style: bold;
+/*
+color: white;
+ border-radius: 6px;
+*/
+}</string>
+      </property>
+      <property name="text">
+       <string>Next City </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_back">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>370</y>
+        <width>114</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pb_back
+{
+       padding-top: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 5px;
+        border: 2px solid #8f8f91;
+        border-radius: 6px;
+background-color: red; 
+/*background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7fa, stop: 1 #dadbde);*/
+color: white;
+font-size: 15px;
+
+opacity: 0.2;
+
+/*image: url(:/resources/img/backButton.png);*/
+}
+
+#pb_back:hover {
+
+background-color: red; 
+font-size: 20px;
+font-style: bold;
+color: white;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="makeCustomTripPage">
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>460</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="makeCustomTripButtonLayout">
+       <item>
+        <widget class="QStackedWidget" name="makeCustomTripButtonPages">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="blankPage"/>
+         <widget class="QWidget" name="buttonPage">
+          <widget class="QPushButton" name="confirmChoicesButton">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>0</y>
+             <width>71</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#confirmChoicesButton{
+
+background-color: rgba(0,0,0,0);
+image: url(:/resources/img/checkMark.png);
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>230</y>
+        <width>171</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="makeCustomTripLayout"/>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>801</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="currentPageDescriptionLayout">
+       <item>
+        <widget class="QLabel" name="pageDescriptionLabel">
+         <property name="styleSheet">
+          <string notr="true">#pageDescriptionLabel{
+color: white;
+font-weight: bold;
+font-size: 40px;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="errorPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>510</y>
+        <width>160</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="errorPageButtonLayout">
+       <item>
+        <widget class="QPushButton" name="errorButton">
+         <property name="styleSheet">
+          <string notr="true">#errorButton
+{
+background-color: #26AEE8;
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string>Ok</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>300</y>
+        <width>801</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="errorPageLabelLayout">
+       <item>
+        <widget class="QLabel" name="errorLabel">
+         <property name="styleSheet">
+          <string notr="true">#errorLabel
+{
+
+color: white;
+font-weight: bold;
+font-size: 55px;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="generatedTripPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>10</y>
+        <width>801</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="generatedTripLabelLayout">
+       <item>
+        <widget class="QLabel" name="generatedTripLabel">
+         <property name="styleSheet">
+          <string notr="true">#generatedTripLabel{
+
+
+color: white;
+font-weight: bold;
+font-size: 40px;
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>460</y>
+        <width>241</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="confirmGeneratedTripLayout">
+       <item>
+        <widget class="QPushButton" name="confirmGeneratedTripButton">
+         <property name="styleSheet">
+          <string notr="true">#confirmGeneratedTripButton{
+
+font-size: 20px;
+	font-style: bold;
+	background-color: #4CAF50; /* Green */
+     color: white;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Continue to Item Purchase</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>420</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="distanceTraveledLayout">
+       <item>
+        <widget class="QLabel" name="distanceTraveledLabel">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>180</y>
+        <width>291</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QListWidget" name="completedTrip"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="makeCustomTripButton">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>140</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton {
+	color: white;
+	font-style: bold;
+font-size: 15px;
+         padding-top: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 5px;
+        border: 4px solid #4CAF50;
+        border-radius: 6px;
+        
+       
+
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                              stop: 0 rgba(0,0,0,0.5), stop: 1 #dadbde);
+
+    
+/*   
+
+ min-width: 80px;     
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                              stop: 0 #f6f7fa, stop: 1 #dadbde);
+
+padding-top: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 5px;
+border-radius: 6px;
+	
+color: white;
+font-style: bold;
+font-size: 15px;  */
+
+        }
+    
+        .QPushButton:hover
+        {
+
+
+
+font-size: 20px;
+font-style: bold;
+
+          background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Make Custom Trip</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="takeLondonTripButton">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>240</y>
+      <width>241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton {
+	color: white;
+	font-style: bold;
+	font-size: 15px;
+     padding-top: 5px;
+     padding-right: 5px;
+     padding-bottom: 5px;
+     padding-left: 5px;
+     border: 4px solid #4CAF50;
+     border-radius: 6px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                              stop: 0 rgba(0,0,0,0.5), stop: 1 #dadbde);
+}
+    
+.QPushButton:hover{
+	font-size: 20px;
+	font-style: bold;
+	background-color: #4CAF50; /* Green */
+     color: white;
+        }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Take Trip Starting London</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="visitInitialCities">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>340</y>
+      <width>241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QPushButton {
+	color: white;
+	font-style: bold;
+	font-size: 15px;
+     padding-top: 5px;
+     padding-right: 5px;
+     padding-bottom: 5px;
+     padding-left: 5px;
+     border: 4px solid #4CAF50;
+     border-radius: 6px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                              stop: 0 rgba(0,0,0,0.5), stop: 1 #dadbde);
+}
+    
+.QPushButton:hover{
+	font-size: 20px;
+	font-style: bold;
+	background-color: #4CAF50; /* Green */
+     color: white;
+        }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Visit the Initial 11 Cities</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1597</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAdmin_Login"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAdmin_Login">
+   <property name="text">
+    <string>Admin Login</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
